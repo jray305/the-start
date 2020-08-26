@@ -1,0 +1,520 @@
+/*body {
+  margin: 0px;
+  background-image:url(picture_2.jpg);
+  background-position: center;
+  background-repeat: fixed;
+  background-attachment: fixed;
+}
+*/
+
+body {
+  margin: 0px;
+}
+
+.container {
+  
+  height: 100vh;
+  width: 100%;
+}
+
+header{
+  height: 100%;
+}
+
+header::after {
+  content:'';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  margin-left: 50px;
+  padding: 5px;
+}
+
+
+nav{
+  float: right;
+}
+
+nav ul {
+  margin-right: 65px;
+  margin-top: 0px;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  margin-top: 0px;
+  padding-top: 25px;
+  position: relative;
+  z-index: 1;
+}
+
+nav ul > li > a {
+  color:#444;
+  font-family: avenir next;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  letter-spacing: 3px;
+  font-weight: 200;
+}
+
+nav a:hover {
+  color:#fff;
+}
+
+nav a::before{
+  content:'';
+  display: block;
+  height: 5px;
+  width: 0%;
+  background-color: #8d705a;
+  position: absolute;
+  top: 0;
+  transition: all ease-in-out 250ms;
+
+}
+
+nav a:hover::before{
+  width: 100%;
+}
+
+.starting {
+  text-align: center;
+  font-family: avenir next;
+  text-transform: uppercase;
+  color: #8d705a;
+  letter-spacing: 5px;
+  font-size: 2em;
+  font-weight: bold;
+  position: absolute;
+  bottom:5px;
+  left:20%;
+  right:20%;
+  opacity: 0.0;
+  animation: fadeIn ease 10s;
+-webkit-animation: fadeIn ease 5s;
+animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%; 
+  overflow: hidden;
+}
+
+.bgvideo {
+min-width: 100%; 
+min-height: 100%;
+width: 100vh;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+z-index: -1;
+}
+
+
+.rectangle {
+  background-color: #645149;
+  max-width: 100%;
+  height: 230px;
+  position: relative;
+}
+
+.quote {
+  font-family: Helvetica Neue;
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 2em;
+  letter-spacing: 3px;
+  color: #fff;
+  position: absolute;
+  top: 22%;
+  left: 12%;
+  right: 10%;
+}
+
+.author {
+  font-family: tuesday night;
+  font-size: 1.3em;
+  color: #fde3c6;
+  position: absolute;
+  bottom: 6%;
+  right: 10%;
+}
+
+.step {
+  font-family: Helvetica Neue;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 1em;
+  color:#fde3c6;
+  text-transform: uppercase;
+
+}
+
+#stomping {
+  background-color: #fff;
+}
+
+.stomping{
+  position: relative;
+  max-width: 100%;
+  height: 495px;
+  background-color: #fff;
+}
+
+.stomppic{
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+  margin: 0;
+}
+.stomphead h3 {
+  margin: 0;
+  position: absolute;
+  top: 70px;
+  left: 95px;
+  font-family: tuesday night;
+  color:#645149;
+  font-weight: medium;
+  font-size: 2.8em;
+  letter-spacing: 5px;
+  
+
+}
+.stompp {
+  text-align: justify;
+  text-justify: char;
+  position: absolute;
+  max-width: 45%;
+  top: 200px;
+  left: 85px;
+  right: 75px;
+  font-family: Raleway;
+  font-weight: normal;
+  color:#4b4b54;
+  letter-spacing: 1px;
+  word-spacing: 4px;
+  line-height: 1.8em;
+  font-size: 1em;
+
+}
+
+.journey {
+  background-color: #4b4b54;
+  color: #fff;
+  font-family: Raleway;
+  font-weight: normal;
+  letter-spacing: 1px;
+  font-size: 13px;
+  line-height: 1em;
+  max-width: 100%;
+  height: 290px;
+  position: relative;
+}
+
+.number1 h1{
+  color: #fde3c6;
+  font-size: 8em;
+  font-family: Raleway;
+  opacity: .35;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: -20px;
+}
+
+.step1{
+  margin: 0px;
+  padding: 0px;
+  color: #fff;
+  border: 2px;
+  border-color:#fff;
+  border-style: none;
+  border-radius: 10px;
+  max-width: 15%;
+  max-height: 100%;
+  padding: 20px;
+  position: absolute;
+  top: 20px;
+  left: 90px;
+  font-size: 1em;
+}
+
+.number1 h1{
+  color: #fde3c6;
+  font-size: 10em;
+  font-family: Raleway;
+  opacity: .35;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: -20px;
+}
+
+.step2{
+  margin: 0px;
+  padding: 0px;
+  border: 2px;
+  border-color:#fff;
+  border-style: none;
+  border-radius: 10px;
+  max-width: 15%;
+  max-height: 100%;
+  padding: 20px;
+  position: absolute;
+  top: 20px;
+  left: 512px;
+  font-size: 1em;
+}
+
+.number2 h1{
+  color: #fde3c6;
+  font-size: 10em;
+  font-family: Raleway;
+  opacity: .35;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: -20px;
+}
+
+.step3 {
+  margin: 0px;
+  padding: 0px;
+  border: 2px;
+  border-color:#fff;
+  border-style: none;
+  border-radius: 10px;
+  max-width: 15%;
+  max-height: 100%;
+  padding: 20px;
+  position: absolute;
+  top: 20px;
+  right: 90px;
+  font-size: 1em;
+}
+
+.number3 h1{
+  color: #fde3c6;
+  font-size: 10em;
+  font-family: Raleway;
+  opacity: .35;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: -20px;
+}
+
+.journey p{
+  margin: 0px;
+  padding: 0px;
+  line-height: 1.6em;
+  text-align: justify;
+}
+
+.bgimg2{
+  background-image:url(photo_21.jpg); 
+  background-position: center;
+  height: 500px;
+  width: 100%;
+  position: relative;
+  margin: 0;
+}
+
+.square1 {
+  background-color: #fde3c6;
+  height: 250px;
+  width: 66%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+#squarep {
+  position: absolute;
+  margin: 0px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  width: 75%;
+  font-family: raleway;
+  font-size: 1em;
+  color: #645149;
+  text-align: center;
+  letter-spacing: 2px;
+  line-height: 1.4em;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#youfeelme {
+  position: absolute;
+  margin: 0px;
+  top: 65%;
+  left: 70%;
+  font-family: tuesday night;
+  letter-spacing: 2px;
+  font-size: 1.3em;
+  color: #544340;
+}
+
+.cardsection {
+  width: 100%;
+  height: 490px;
+  background-color: #fff;
+  position: relative;
+}
+
+.card1 {
+  background-image:url(blogphoto5.jpg); 
+  background-position: center bottom;
+  height: 165px;
+  width: 290px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #000;
+  display: inline-block;
+  margin: 100px;
+}
+
+.card2 {
+  background-image:url(blogphoto2.jpeg); 
+  background-position: center;
+  height: 165px;
+  width: 290px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #000;
+  display: inline-block;
+  margin-bottom: 100px;
+}
+
+.card3 {
+  background-image:url(blogphoto3.jpeg); 
+  background-position: center;
+  height: 165px;
+  width: 290px;
+  padding: 0.001em;
+  border: 2px;
+  border-color: #000;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #000;
+  display: inline-block;
+  margin: 90px;
+  margin-top: 150px;
+}
+
+.cardtitle1 {
+  position: absolute;
+  width: 286px;
+  border: solid;
+  border-width: 2px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-color: #8d705a;
+
+  top: 315px;
+  font-family: Helvetica Neue;
+}
+
+.cardtitle2 {
+  position: absolute;
+  width: 286px;
+  border: solid;
+  border-width: 2px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-color: #8d705a;
+  top: 315px;
+  font-family: Helvetica Neue;
+}
+
+.cardtitle3 {
+  position: absolute;
+  width: 286px;
+  border: solid;
+  border-width: 2px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-color: #8d705a;
+  top: 315px;
+
+}
+
+.cardtitle1 h3 {
+  font-weight: 480;
+  font-family: helvetica Neue;
+  font-size: 1.3em;
+  letter-spacing: 1px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 50px;
+  color: #4b4b54;
+}
+
+.cardtitle2 h3 {
+  font-weight: 480;
+  font-family: helvetica Neue;
+  font-size: 1.3em;
+  letter-spacing: 1px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 50px;
+  color: #4b4b54;
+}
+
+.cardtitle3 h3 {
+  font-weight: 480;
+  font-family: helvetica Neue;
+  font-size: 1.3em;
+  letter-spacing: 1px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 50px;
+  color: #4b4b54;
+}
